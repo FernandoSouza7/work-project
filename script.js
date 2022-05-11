@@ -1,6 +1,8 @@
+// Documentar a função com nome id
+
 function mostreConteudo(e, tema) {
     // Declare all variables
-    var i, conteudo, btn;
+    let i, conteudo, btn;
   
     // Get all elements with class="tabcontent" and hide them
     conteudo = document.getElementsByClassName("conteudo");
@@ -17,5 +19,5 @@ function mostreConteudo(e, tema) {
   
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(tema).style.display = "block";
-    e.currentTarget.className += " active";
+    e.currentTarget.className += " active"
   } 
