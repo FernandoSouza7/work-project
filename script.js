@@ -1,23 +1,19 @@
-// Documentar a função com nome id
+//****** NÃO ENVIAR OS COMENTÁRIOS *****
 
 function mostreConteudo(e, tema) {
-    // Declare all variables
-    let i, conteudo, btn;
-  
-    // Get all elements with class="tabcontent" and hide them
-    conteudo = document.getElementsByClassName("conteudo");
-    for (i = 0; i < conteudo.length; i++) {
-      conteudo[i].style.display = "none";
-      // conteudo[i].style.border = "none";
-    }
-  
-    // Get all elements with class="tablinks" and remove the class "active"
-    btn = document.getElementsByClassName("btn");
-    for (i = 0; i < btn.length; i++) {
-      btn[i].className = btn[i].className.replace(" active", "");
-    }
-  
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(tema).style.display = "block";
-    e.currentTarget.className += " active"
-  } 
+  let i, conteudo, btn;
+
+  //Receber todos os elementos da classe conteudo
+  conteudo = document.getElementsByClassName("conteudo");
+  for (i = 0; i < conteudo.length; i++) {
+    conteudo[i].style.display = "none";
+  }
+  // Receber todos os elementos da classse btn
+  btn = document.getElementsByClassName("btn");
+  for (i = 0; i < btn.length; i++) {
+    btn[i].className = btn[i].className.replace(" active", "");
+  }
+  // Mostrar a tab atual, e adicionar o active para abrir o conteúdo no botão
+  document.getElementById(tema).style.display = "block";
+  e.currentTarget.className += " active";
+}
