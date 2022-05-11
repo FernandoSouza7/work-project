@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-container">
+
+        
+            <img src="tata-consultancy-services-logo-tcs.svg" alt="TCS LOGO">
+        
+
+        <div class="container-btn">
+            <button class="btn" onclick="mostreConteudo(event, 'Home')"><i class="fas fa-home"></i> Home</button>
+            <button class="btn" onclick="mostreConteudo(event, 'Pessoal')"><i class="fas fa-user"></i> Pessoal</button>
+            <button class="btn" onclick="mostreConteudo(event, 'Contato')"><i class="fas fa-envelope"></i> Contato</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="Home" class="conteudo"></div>
+
+        <div id="Pessoal" class="conteudo">
+            <h3>Matheus Fernando de Souza</h3>
+            <p>Olá, tenho 25 anos e sou da cidade de Araponga, Paraná</p><br>
+            <h3>Principais Objetivos:</h3>
+            <p>Escrever meu principais objetivos</p>
+        </div>
+
+        <div id="Contato" class="conteudo">
+            <label for="">Nome</label><br>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome aqui."><br><br>
+            <label for="">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="email@exemplo.com"><br><br>
+            <label for="">Mensagem</label><br>
+            <textarea name="texto" id="texto" cols="30" rows="5" placeholder="Deixe sua mensagem aqui"></textarea><br><br>
+            <button class="btn-form" type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
